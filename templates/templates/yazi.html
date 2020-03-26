@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yazı Ekle</title>
+
+    <link href="{% static 'css/yazi.css' %}" rel="stylesheet" type="text/css">
+</head>
+<br>
+
+{% csrf_token %}
+<form id ="paper" action="/yaziGonder/" method="post">
+    {% csrf_token %}
+    <div id="margin">Yazı Başlık: <input id="title" type="text" name="baslik" required></div>
+    <textarea placeholder="Değerli içeriğinizi giriniz"  id="text" rows="5" cols="40" name="icerik" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px;" required></textarea>
+    <br><br>
+    {% csrf_token %}
+    <input id = "button" type="submit" value="Gönder">
+
+</form>
+
+<script src="{% static 'js/yazi.js' %}"></script>
+</body>
+</html>

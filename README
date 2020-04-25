@@ -1,1 +1,5 @@
 Temel Django Projesi 
+
+Firebase Entegreli, WebSitesi için içerikler hazırlanabilir. Databaseden veri çekilebilir/gönderilebilir. Bu proje başlangıç projesidir.
+
+Projede küçük çapta hatalar olabilir. Djangoda kendimi geliştirme amaçlı yazdığım bir projedir. Yeni başlayanlar için burada paylaşıyorum umarım faydalı olur.
